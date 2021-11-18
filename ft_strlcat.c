@@ -6,7 +6,7 @@
 /*   By: ababa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:33:53 by ababa             #+#    #+#             */
-/*   Updated: 2021/11/18 00:21:23 by ababa            ###   ########.fr       */
+/*   Updated: 2021/11/18 01:28:30 by ababa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	j = ft_strlen(src);
 	if (!dest && size == 0)
 		return (j);
-	i = ft_strlen((const char *)dest);
+	i = ft_strlen(dest);
 	if (i >= size)
 		return (size + j);
 	while (src[k] != '\0' && k < size - i - 1)
